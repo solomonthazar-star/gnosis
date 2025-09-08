@@ -1,74 +1,12 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Georgia", serif;
-  color: white;
-  overflow-x: hidden;
-  line-height: 1.6;
-  text-align: center;
-}
-
-/* Background Video */
-#bg-video {
+/* Static Milky Way Background (hosted link, no file upload needed) */
+.bg-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg') no-repeat center center;
+  background-size: cover;
   z-index: -1;
-  filter: brightness(0.7);
-}
-
-/* Content */
-main {
-  position: relative;
-  z-index: 1;
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
-}
-
-p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-a.discord-btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background: #5865F2;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: background 0.3s ease;
-}
-
-a.discord-btn:hover {
-  background: #4752C4;
-}
-
-#quotes-container {
-  margin-top: 3rem;
-}
-
-.quote {
-  margin: 3rem 0;
-  font-size: 1.5rem;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  filter: brightness(0.65);
 }
