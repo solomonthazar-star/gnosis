@@ -4,25 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timeless Philosophy</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Galaxy Video -->
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="https://player.vimeo.com/external/357708068.sd.mp4?s=51c86e9a60f23d2ef1d2c1cfae0d36b4384e8876&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    body {
-      font-family: "Georgia", serif;
-      color: white;
-      overflow-x: hidden;
-      line-height: 1.6;
-      text-align: center;
-    }
+  <!-- Content -->
+  <main>
+    <h1>Timeless Philosophy</h1>
+    <p>Wisdom across the ages, from Socrates to the Hermetica.</p>
+    <a href="YOUR_DISCORD_INVITE_HERE" target="_blank" class="discord-btn">Join the Discussion</a>
 
-    /* Background Video */
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+    <div id="quotes-container"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Timeless Philosophy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
