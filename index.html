@@ -3,39 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Philosophy in the Galaxy</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Background Video -->
-  <video autoplay muted loop id="bg-video">
-    <source src="assets/galaxy.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <title>Timeless Philosophy</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <!-- Overlay Content -->
-  <main>
-    <section class="hero">
-      <h1>Philosophy in the Galaxy</h1>
-      <p>Journey through timeless wisdom across the stars.</p>
-      <a href="https://discord.gg/7CdxFyqVdw" target="_blank" class="discord-btn">
-        Join the Discord
-      </a>
-    </section>
+    body {
+      font-family: "Georgia", serif;
+      color: white;
+      overflow-x: hidden;
+      line-height: 1.6;
+      text-align: center;
+    }
 
-    <section class="quotes">
-      <blockquote>"The unexamined life is not worth living." — Socrates</blockquote>
-      <blockquote>"Man is the measure of all things." — Protagoras</blockquote>
-      <blockquote>"That which is Below corresponds to that which is Above." — Corpus Hermeticum</blockquote>
-      <blockquote>"It is better to be feared than loved, if you cannot be both." — Machiavelli, *The Prince*</blockquote>
-      <blockquote>"At the touch of love, everyone becomes a poet." — Plato</blockquote>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Philosophy in the Galaxy</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    /* Background Video */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
