@@ -1,12 +1,88 @@
-/* Static Milky Way Background (hosted link, no file upload needed) */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  color: white;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* Static Milky Way Background (from Pexels CDN) */
 .bg-image {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg') no-repeat center center;
+  background: url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920') no-repeat center center;
   background-size: cover;
   z-index: -1;
   filter: brightness(0.65);
+}
+
+/* Content Style */
+main {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.discord-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #5865F2;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(88,101,242,0.6);
+}
+
+.discord-btn:hover {
+  background: #4752C4;
+  box-shadow: 0 0 20px rgba(88,101,242,0.9);
+}
+
+/* Quotes Section */
+#quotes-container {
+  margin-top: 3rem;
+}
+
+.quote {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+  line-height: 1.6;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
